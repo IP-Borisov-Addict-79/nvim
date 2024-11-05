@@ -78,7 +78,7 @@ set softtabstop=4
 set expandtab
 set autoindent
 
-" show special characters - Tab and trailing spaces
+" show special characters - Tabs (trailing spaces is other beast)
 set list
 set listchars=tab:>>
 
