@@ -20,12 +20,7 @@ else
 endif
 
 " tema
-set textwidth=80
+"set textwidth=80
 set spelllang=en,ru
 setlocal spell
-"
-" linewidth hint
-"let &colorcolumn=join(range(81,999),",")
-"set colorcolumn+=1
-
-" vim:set sw=2:
+:Wrap
