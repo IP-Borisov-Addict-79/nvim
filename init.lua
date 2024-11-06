@@ -134,12 +134,14 @@ vim.cmd(
 -----------------------------------------------------------------------------
 
 -- colorscheme, visual highlighting of current line
-vim.opt.background = 'dark'
-vim.opt.termguicolors = true
-vim.cmd([[ colorscheme darcula ]])
-vim.g.lightline = { colorscheme = 'darculaOriginal' }
-vim.opt.cursorlineopt = { 'number', 'screenline' }
-vim.opt.cursorline = true
+if vim.fn.filereadable('~/.config/nvim/colors/darcula.vim') then
+    vim.opt.background = 'dark'
+    vim.opt.termguicolors = true
+    vim.cmd([[ colorscheme darcula ]])
+    vim.g.lightline = { colorscheme = 'darculaOriginal' }
+    vim.opt.cursorlineopt = { 'number', 'screenline' }
+    vim.opt.cursorline = true
+end
 
 -- BufExplorer on Ctrl-b and some tweaks
 if vim.fn.filereadable('~/.config/nvim/plugin/bufexplorer.vim') then
