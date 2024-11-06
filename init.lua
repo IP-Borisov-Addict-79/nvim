@@ -129,53 +129,6 @@ vim.cmd(
     ]]
 )
 
------------------------------------------------------------------------------
---  old plugins, some should go in essentials (colorscheme, BufExplorer)   --
------------------------------------------------------------------------------
-
--- colorscheme, visual highlighting of current line
-if vim.fn.filereadable('~/.config/nvim/colors/darcula.vim') then
-    vim.opt.background = 'dark'
-    vim.opt.termguicolors = true
-    vim.cmd([[ colorscheme darcula ]])
-    vim.g.lightline = { colorscheme = 'darculaOriginal' }
-    vim.opt.cursorlineopt = { 'number', 'screenline' }
-    vim.opt.cursorline = true
-end
-
--- BufExplorer on Ctrl-b and some tweaks
-if vim.fn.filereadable('~/.config/nvim/plugin/bufexplorer.vim') then
-    vim.keymap.set('n', '<C-b>', ':BufExplorerHorizontalSplit<CR>', { noremap = true, silent = true })
-    vim.g.bufExplorerDefaultHelp = 0 -- do not show default help
-    vim.g.bufExplorerSplitBelow  = 1 -- split below current window
-end
-
--- pandoc markdown support. Requires vim-pandoc-syntax:
--- https://github.com/vim-pandoc/vim-pandoc-syntax
--- prevent XTRMLY annoying pandoc-markdown rendering
-if vim.fn.filereadable('~/.config/nvim/plugin/pandoc-syntax-check.vim') then
-    vim.g['pandoc#syntax#conceal#use'] = 0
-end
-
--- move plugin - move (selected) lines and blocks up&down (with Alt-[hjkl])
-if vim.fn.filereadable('~/.config/nvim/plugin/move.vim') then
-    vim.g.move_key_modifier = 'M' -- set modifier key to alt
-end
-
---  old version of NERDTree plugin with some tweaks (with killed tagbar)
-if vim.fn.filereadable('~/.config/nvim/plugin/NERD_tree.vim') then
-    vim.g.NERDTreeWinSize   = 32  -- change default NERDTree width
-    vim.g.NERDTreeMinimalUI =  1  -- don't show help string
-    vim.opt.hidden = true         -- prevent NERDtree from splitting window on opening a new file
-
-    -- a wrapper for NERDTreeToggle
-    vim.cmd(
-        [[
-            function! NERDTag()
-                call system('make clean') " clean shite left from previous session
-                NERDTreeToggle
-            endfunction
-            command NTag call NERDTag()
-        ]]
-    )
-end
+-- Plugins
+require("lazyboot")              -- bootstrap LazyVim
+require("lazy").setup("plugins") -- install/load plugins

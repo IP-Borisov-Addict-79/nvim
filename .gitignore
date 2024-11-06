@@ -3,3 +3,4 @@ viminfo
 *.tmp.*
 *.add
 *.add.*
+*.json
