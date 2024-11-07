@@ -1,19 +1,23 @@
 # Backup copy of my Neovim configuration
 
-This is a backup of my current Neovim config which has some cruft accumulated since before I switched from the OG Vim. Needs some serious cleanup, especially in syntax highlighting / auto-indenting areas.
+This is a backup copy of my Neovim configuration after a major cleanup and switching from `init.vim` to `init.lua`.
 
 ## Plugins
 
-Some are new, some have been installed since Vim-7-something-something. Newer ones are about to be wiped out and reinstalled via some plugin manager.
+Some are new, some have been installed since Vim-6.5.something-something.
 
-- [goyo](https://github.com/junegunn/goyo.vim)
-- [bufexplorer](https://www.vim.org/scripts/script.php?script_id=42)
-- [Rename2](https://www.vim.org/scripts/script.php?script_id=2724)
-- [Tabular](https://www.vim.org/scripts/script.php?script_id=3464)
-- [The NERD tree](https://www.vim.org/scripts/script.php?script_id=1658) (do I really need it? - YEP.)
-- [vim-move](https://github.com/matze/vim-move)
-- ~~some ancient version of [vim-pandoc-bundle](https://www.vim.org/scripts/script.php?script_id=5088)? (I guess? Some files don't match with the package)~~ KIA.
-- [vim-visual-multi](https://github.com/mg979/vim-visual-multi)
-- [Darcula color scheme](https://github.com/doums/darcula)
+Simple single-file plugins, either semi-abandoned (i.e. not hosted on GH) or crapped-out by yours truly:
 
-~~There were also bits and pieces from an old [LaTeX-Suite](https://sourceforge.net/projects/vim-latex/) version, now deleted.~~
+- [`plugin/Rename2.vim`](https://www.vim.org/scripts/script.php?script_id=2724): a small but (sometimes) convinient thingy for renaming currently open files
+- `plugin/Wrap.vim`: word-wrapping mode (with altered keymapping to accomodate for visual lines) for `.md`'s, `.txt`'s, `.tex`'s, etc.; originally was a part of the good ol' `init.vim` (nee `~/.vimrc`)
+- `plugin/EncodingMenu.vim`: menu for setting the correct character encoding mapped to `<F7>`; just some copypasta compiled from sources elsewhere (SO?); originally was a part of the good ol' `init.vim` (nee `~/.vimrc`)
+
+Plugins managed by LazyVim:
+
+- [goyo](https://github.com/junegunn/goyo.vim): distraction-free writing in Vim
+- [bufexplorer](https://github.com/jlanzarotta/bufexplorer): quickly switch between buffers
+- [Tabular](https://github.com/godlygeek/tabular): a relatively easy tool for aligning text
+- [The NERD tree](https://github.com/preservim/nerdtree): a file system explorer
+- [vim-move](https://github.com/matze/vim-move): move lines and selections in a visual manner
+- [vim-visual-multi](https://github.com/mg979/vim-visual-multi): multiple cursor for Vim
+- [Darcula color scheme](https://github.com/doums/darcula): a nice (not so) dark colorscheme, a reproduction of the official JetBrains IDE Darcula theme
