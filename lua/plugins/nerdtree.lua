@@ -1,7 +1,6 @@
 return {
     'preservim/nerdtree',
     name = 'NERDTree',
-    priority = 1000,
     config = function()
         vim.g.NERDTreeWinSize   = 32  -- change default NERDTree width
         vim.g.NERDTreeMinimalUI =  1  -- don't show help string

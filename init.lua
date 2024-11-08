@@ -36,12 +36,6 @@ vim.g.fortran_have_tabs = 0
 vim.g.fortran_more_precise = 1
 vim.g.fortran_do_enddo = 1
 
--- set default SQL syntax to postgresql
--- src: https://github.com/exu/pgsql.vim.git
-if vim.fn.filereadable('~/.config/nvim/syntax/pgsql.vim') then
-    vim.g['sql_type_default'] = 'pgsql'
-end
-
 -- Jump to the last position when reopening a file
 if vim.fn.has('autocmd') then
     vim.cmd([[ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif ]])
