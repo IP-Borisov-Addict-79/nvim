@@ -22,3 +22,4 @@ Plugins managed by LazyVim:
 - [vim-move](https://github.com/matze/vim-move): move lines and selections in a visual manner
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi): multiple cursor for Vim
 - [Darcula color scheme](https://github.com/doums/darcula): a nice (not so) dark colorscheme, a reproduction of the official JetBrains IDE Darcula theme
+- [VimTeX](https://github.com/lervag/vimtex): a modern Vim and Neovim filetype and syntax plugin for LaTeX files
