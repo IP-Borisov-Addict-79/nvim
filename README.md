@@ -17,6 +17,7 @@ Plugins managed by LazyVim:
 - [goyo](https://github.com/junegunn/goyo.vim): distraction-free writing in Vim
 - [bufexplorer](https://github.com/jlanzarotta/bufexplorer): quickly switch between buffers
 - [Tabular](https://github.com/godlygeek/tabular): a relatively easy tool for aligning text
+- [psql.vim](https://github.com/exu/pgsql.vim): Vim Postgresql syntax file (tuned to override system-wide SQL syntax settings: there must be _only one thing to do stuff_ lol)
 - [The NERD tree](https://github.com/preservim/nerdtree): a file system explorer
 - [vim-move](https://github.com/matze/vim-move): move lines and selections in a visual manner
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi): multiple cursor for Vim
