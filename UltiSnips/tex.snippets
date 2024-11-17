@@ -1,0 +1,102 @@
+snippet abstract
+\abstract{%
+    $1%
+}
+$0
+endsnippet
+
+snippet envabstr
+\begin{abstract}
+    $1
+\end{abstract}
+$0
+endsnippet
+
+snippet figure
+\begin{figure}
+    \centering
+    \includegraphics[width=$1\textwidth]{$2}
+    \caption{$3}
+    \label{$4}
+\end{figure}
+$0
+endsnippet
+
+snippet equation
+\begin{equation}
+    $1
+    \label{$2}
+\end{equation}
+$0
+endsnippet
+
+snippet align
+\begin{align}
+    $1
+    \label{$2}
+\end{align}
+$0
+endsnippet
+
+snippet gather
+\begin{gather}
+    $1
+    \label{$3}
+\end{gather}
+$0
+endsnippet
+
+snippet br(
+\left($1\right)$0
+endsnippet
+
+snippet mean
+\left<$1\right>$0
+endsnippet
+
+snippet itemize
+\begin{itemize}
+    \item $1
+\end{itemize}
+$0
+endsnippet
+
+snippet center
+\begin{center}
+    $1
+\end{center}
+$0
+endsnippet
+
+snippet frame
+\begin{frame}
+
+    \frametitle{$1}
+
+    $2
+
+\end{frame}
+$0
+endsnippet
+
+snippet block
+\begin{block}{$1}
+    $2
+\end{block}
+$0
+endsnippet
+
+snippet columns
+\begin{columns}
+
+    \begin{column}{$1\textwidth}
+        $2
+    \end{column}
+
+    \begin{column}{$3\textwidth}
+        $4
+    \end{column}
+
+\end{columns}
+$0
+endsnippet

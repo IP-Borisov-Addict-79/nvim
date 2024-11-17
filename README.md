@@ -2,6 +2,8 @@
 
 This is a backup copy of my Neovim configuration after a major cleanup and switching from `init.vim` to `init.lua`.
 
+> [Lazy.nvim](https://github.com/folke/lazy.nvim) requires Neovim >= 8.0. The latest release of Neovim that can be installed on [current Debian Stable](https://www.debian.org/News/2023/20230610.en.html) is [0.8.3](https://github.com/neovim/neovim/releases/tag/v0.8.3) (direct link to Debian package: https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb, https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb.sha256sum).
+
 ## Plugins
 
 Some are new, some have been installed since Vim-6.5.something-something.
@@ -22,4 +24,11 @@ Plugins managed by LazyVim:
 - [vim-move](https://github.com/matze/vim-move): move lines and selections in a visual manner
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi): multiple cursor for Vim
 - [Darcula color scheme](https://github.com/doums/darcula): a nice (not so) dark colorscheme, a reproduction of the official JetBrains IDE Darcula theme
-- [VimTeX](https://github.com/lervag/vimtex): a modern Vim and Neovim filetype and syntax plugin for LaTeX files
+- [UltiSnips](https://github.com/SirVer/ultisnips): the ultimate solution for snippets in Vim.
+  Requires [pynvim](https://github.com/neovim/pynvim) for systems with Python-3.12. On Arch/Manjaro:
+
+  ```console
+  # pacman -S python-pynvim
+  ```
+
+  May break any day regardless because _Python_...
