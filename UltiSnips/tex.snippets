@@ -1,14 +1,72 @@
+snippet revtex42
+\documentclass[
+    12pt,
+    a4paper,notitlepage,
+    twocolumn,
+    nofootinbib,
+    amsmath,amssymb
+]{revtex4-2}
+
+\usepackage{graphicx}
+%\graphicspath{{figures/}}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage[
+    colorlinks = true,
+    urlcolor = MidnightBlue,
+    linkcolor = Maroon,
+    citecolor = Maroon
+]{hyperref}
+
+\hypersetup{
+    pdfauthor = {${1:M.~M.~Cheems}},
+    pdftitle = {${2:Artimcle title}},
+    pdfsubject = {${3:Cheems}},
+    pdfkeywords = {${4:bonk}}
+}
+
+%\usepackage{lineno}
+%\setlength\linenumbersep{3pt}
+%\linenumbers
+
+\begin{document}
+
+\title{${5:Artimcle title}}
+
+\author{${6:M.~M.~Cheems}}
+\email{${7:mmcheems@lanl.gov}}
+
+\affiliation{${8:Nuclear Engineering and Nonproliferation}}
+
+\begin{abstract}
+    %\noindent
+    $9
+\end{abstract}
+
+\maketitle
+
+%\input{introduction}
+%\input{section}
+
+%\section*{Funding}
+
+%\section*{Conflict of interest}
+
+\acknowledgements
+
+%\bibliographystyle{$10}
+%\bibliography{$11}
+%\input{bibliography}
+
+\end{document}
+$0
+endsnippet
+
 snippet abstract
 \abstract{%
     $1%
 }
-$0
-endsnippet
-
-snippet envabstr
-\begin{abstract}
-    $1
-\end{abstract}
 $0
 endsnippet
 
