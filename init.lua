@@ -36,13 +36,13 @@ vim.g.fortran_have_tabs = 0
 vim.g.fortran_more_precise = 1
 vim.g.fortran_do_enddo = 1
 
--- Turn off Vim's heuristic that determines various tex flavors and treat all
--- *.tex files as, well, TeX
-vim.cmd([[ autocmd BufRead,BufNewFile *.tex set filetype=tex ]])
-
--- Jump to the last position when reopening a file
 if vim.fn.has('autocmd') then
+    -- Jump to the last position when reopening a file
     vim.cmd([[ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif ]])
+
+    -- Turn off Vim's heuristic that determines various tex flavors and treat all
+    -- *.tex files as, well, TeX
+    vim.cmd([[ au BufRead,BufNewFile *.tex set filetype=tex ]])
 end
  
 -- turn off arrow keys in normal and insert modes
