@@ -25,10 +25,18 @@ Plugins managed by LazyVim:
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi): multiple cursor for Vim
 - [Darcula color scheme](https://github.com/doums/darcula): a nice (not so) dark colorscheme, a reproduction of the official JetBrains IDE Darcula theme
 - [UltiSnips](https://github.com/SirVer/ultisnips): the ultimate solution for snippets in Vim.
-  Requires [pynvim](https://github.com/neovim/pynvim) for systems with Python-3.12. On Arch/Manjaro:
+  This _requires_ [pynvim](https://github.com/neovim/pynvim).
+
+  On Arch/Manjaro:
 
   ```console
   # pacman -S python-pynvim
   ```
 
-  May break any day regardless because _Python_...
+  On Debian/Ubuntu/etc.:
+
+  ```console
+  # apt install python3-pynvim
+  ```
+
+  May break any day regardless, because _Python_...
