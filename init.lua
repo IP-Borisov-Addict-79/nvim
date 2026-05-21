@@ -72,3 +72,25 @@ vim.keymap.set('', '<C-L>', ':t.<CR>', { noremap = true, silent = true })
 -- Plugins
 require("lazyboot")              -- bootstrap LazyVim (lua/lazyboot.lua)
 require("lazy").setup("plugins") -- manage plugins    (lua/{plugins.lua, plugins})
+
+-- neovide settings
+if vim.g.neovide then
+    -- fontface
+    vim.o.guifont = "JetBrains Mono NL:h13"
+    --
+    -- line spacing
+    vim.opt.linespace = 3
+    --
+    -- hide the mouse when typing
+    --
+    vim.g.neovide_hide_mouse_when_typing = true
+    --
+    -- padding
+    vim.g.neovide_padding_top = 5
+    vim.g.neovide_padding_bottom = 5
+    vim.g.neovide_padding_left = 5
+    vim.g.neovide_padding_right = 5
+    --
+    -- remember window size
+    vim.g.neovide_remember_window_size = true
+end
